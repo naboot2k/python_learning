@@ -49,5 +49,25 @@ except Exception as e:
 
 """
 异常else：
-    else表示的是如果没有异常要执行的代码
+    else表示的是如果没有异常要执行的代码（可选）
 """
+try:
+    print("Hello")
+except Exception as e:
+    print('出现异常错误')
+else:
+    print("没有异常")
+
+"""
+异常的finally
+    finally表示的是无论是否异常都要执行的代码，例如关闭文件
+"""
+try:
+    open("D：/123.txt", "r", encoding="utf-8")
+except Exception as e:
+    print('出现异常错误')
+    f = open("D：/123.txt", "w", encoding="utf-8")
+else:
+    print("关闭文件")
+finally:
+    f.close()
