@@ -9,7 +9,7 @@ from pyecharts.options import TitleOpts, LabelOpts
 # 处理数据
 f_us = open("D:\\Code\\python_learning\\美国.txt", "r", encoding="utf-8")
 us_data = f_us.read() # 获得美国的全部内容
-f_jp = open("D:\\Code\\python_learning\\日本.txt", "r", encoding="utf-8")
+f_jp = open("/09_图像绘制/日本.txt", "r", encoding="utf-8")
 jp_data = f_jp.read() # 获得日本的全部内容
 f_in = open("D:\\Code\\python_learning\\印度.txt", "r", encoding="utf-8")
 in_data = f_in.read() # 获得印度的全部内容
